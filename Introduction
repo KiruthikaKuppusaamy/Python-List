@@ -1,0 +1,37 @@
+# List store data of different data types:
+aiml = [1,'M','Akshay',45.6]
+print(aiml)
+
+"""
+output : 
+[1, 'M', 'Akshay', 45.6]
+"""
+
+# ordered, mutable, allow duplicate values
+# data are stored sequentially thus we can access in order
+print(aiml[0])       
+print(aiml[1])
+
+"""
+output : 
+1
+M
+"""
+
+# List is mutable hence we can change its item  
+aiml[2] = 'Anbarasu' 
+print(aiml)
+
+"""
+output : 
+[1, 'M', 'Anbarasu', 45.6]"""
+"""
+
+# List can hold duplicate values
+aiml = [1,'M','Akshay',45.6, 1,'M','Anbarasu',40.2]
+print(aiml)
+
+"""
+output : 
+[1, 'M', 'Akshay', 45.6, 1, 'M', 'Anbarasu', 40.2]
+"""
