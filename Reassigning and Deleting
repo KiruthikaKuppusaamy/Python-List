@@ -1,0 +1,45 @@
+# Reassigning the list with indexing
+aiml = ['HTML','CSS','JAVASCRIPT','PHP','SQL']
+print("Before Reassigning :",aiml)
+aiml[4] = 'MYSQL'
+print("After Reassigning  :",aiml)
+
+______________________________________________________________________
+output
+
+Before Reassigning : ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'SQL']
+After Reassigning  : ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'MYSQL']
+______________________________________________________________________
+
+
+# Reassigning the list with slice indexing
+aiml[0:2] = ['HTML 5','CSS 3']
+print("Reassigned with slice index :",aiml)
+
+______________________________________________________________________
+output
+
+Reassigned with slice index : ['HTML 5', 'CSS 3', 'JAVASCRIPT', 'PHP', 'MYSQL']
+______________________________________________________________________
+
+# Removing items from the list
+aiml = ['HTML','CSS','JAVASCRIPT','PHP','MYSQL']
+print("Items in the list :",aiml)
+
+del aiml[1]
+print("Removed with index :",aiml)
+
+del aiml[2:4]
+print("Removed with slice index :",aiml)
+
+aiml.remove('JAVASCRIPT')
+print("Removed with item name:",aiml)
+
+______________________________________________________________________
+output
+
+Items in the list : ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'MYSQL']
+Removed with index : ['HTML', 'JAVASCRIPT', 'PHP', 'MYSQL']
+Removed with slice index : ['HTML', 'JAVASCRIPT']
+Removed with item name: ['HTML']
+______________________________________________________________________
