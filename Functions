@@ -1,0 +1,139 @@
+# len() - returns length of the list
+trending = ['AWS','Selenium','Hadoop','ReactJS','Angular7','Blockchain']
+print("Items in the List : ",trending)
+print("Length of the List ",len(trending))
+_______________________________________________________________________________________
+output:
+Items in the List :  ['AWS', 'Selenium', 'Hadoop', 'ReactJS', 'Angular7', 'Blockchain']
+Length of the List  6
+_______________________________________________________________________________________
+
+
+
+
+# insert() - Inserting item in the list
+trending = ['AWS','Selenium','Hadoop','ReactJS','Angular7','Blockchain']
+print("Items in the List : ",trending)
+trending.insert(2,"Data Science")
+print("List after inserting : ",trending)
+_______________________________________________________________________________________
+output:
+Items in the List :  ['AWS', 'Selenium', 'Hadoop', 'ReactJS', 'Angular7', 'Blockchain']
+List after inserting :  ['AWS', 'Selenium', 'Data Science', 'Hadoop', 'ReactJS', 'Angular7', 'Blockchain']
+_______________________________________________________________________________________
+
+
+
+
+# pop() - Removes the item at the given index
+trending = ['AWS','Selenium','Hadoop','ReactJS','Angular7','Blockchain']
+print("Items in the List : ",trending)
+trending.pop()   # by default it is -1 which removes the last item in the list
+print("pop without index : ",trending)  
+trending.pop(3)
+print("pop with index : ",trending)
+_______________________________________________________________________________________
+output:
+Items in the List :  ['AWS', 'Selenium', 'Hadoop', 'ReactJS', 'Angular7', 'Blockchain']
+pop without index :  ['AWS', 'Selenium', 'Hadoop', 'ReactJS', 'Angular7']
+pop with index :  ['AWS', 'Selenium', 'Hadoop', 'Angular7']
+_______________________________________________________________________________________
+
+
+
+# count() - counts number of times an item appeared
+past_weather = [32,28,26,27,27,33,37]
+erode_temp = past_weather.count(27)
+print("No.of times 27 repeated in Erode : ",erode_temp)
+_______________________________________________________________________________________
+output:
+No.of times 27 repeated in Erode :  2
+_______________________________________________________________________________________
+
+
+
+# sort() - sort the items in ascending and descending order
+trending = ['AWS','Selenium','Hadoop','ReactJS','Angular7','Blockchain']
+print("Items in the List : ",trending)
+trending.sort()
+print("Sorted List : ",trending)
+trending.sort(reverse=True)
+print("Reverse Sorted List : ",trending)
+_______________________________________________________________________________________
+output:
+Items in the List :  ['AWS', 'Selenium', 'Hadoop', 'ReactJS', 'Angular7', 'Blockchain']
+Sorted List :  ['AWS', 'Angular7', 'Blockchain', 'Hadoop', 'ReactJS', 'Selenium']
+Reverse Sorted List :  ['Selenium', 'ReactJS', 'Hadoop', 'Blockchain', 'Angular7', 'AWS']
+_______________________________________________________________________________________
+
+
+
+# reverse() - reverses the items in the List
+trending = ['AWS','Selenium','Hadoop','ReactJS','Angular7','Blockchain']
+print("Items in the List : ",trending)
+trending.reverse()    # trending[::-1] also reverses the list
+print("Reversed List : ",trending) 
+_______________________________________________________________________________________
+output:
+Items in the List :  ['AWS', 'Selenium', 'Hadoop', 'ReactJS', 'Angular7', 'Blockchain']
+Reversed List :  ['Blockchain', 'Angular7', 'ReactJS', 'Hadoop', 'Selenium', 'AWS']
+_______________________________________________________________________________________
+
+
+
+# copy() - copies the List
+data_structure = ['bubble','quick','merge','heap']
+print("Items in the Data Structure List : ",data_structure)
+sorting = data_structure.copy()   # = can also be used to copy but modification in original gets reflected in the copied list
+print("Items in the Sort List : ",sorting)
+_______________________________________________________________________________________
+output:
+Items in the Data Structure List :  ['bubble', 'quick', 'merge', 'heap']
+Items in the Sort List :  ['bubble', 'quick', 'merge', 'heap']
+_______________________________________________________________________________________
+
+
+# clear() - removes all the items in the List
+data_structure = ['bubble','quick','merge','heap']
+print("Items in the List : ",data_structure)
+data_structure.clear()
+print("Items in the List after clearing: ",data_structure)
+_______________________________________________________________________________________
+output:
+Items in the List :  ['bubble', 'quick', 'merge', 'heap']
+Items in the List after clearing:  []
+_______________________________________________________________________________________
+
+
+
+# index() - returns the index of the item in the List
+python_score = [89,90,99,82,89,91,83,89,76]
+print("Items in the list :",python_score)
+first = python_score.index(89)
+with_start = python_score.index(89,2)
+with_end = python_score.index(89,5,8)
+print("Index of '89' in the list :",first)
+print("Searched '89' after 2nd Index :",with_start)
+print("Searched '89' between 5th and 8th Index :",with_end)
+_______________________________________________________________________________________
+output:
+Items in the list : [89, 90, 99, 82, 89, 91, 83, 89, 76]
+Index of '89' in the list : 0
+Searched '89' after 2nd Index : 4
+Searched '89' between 5th and 8th Index : 7
+_______________________________________________________________________________________
+
+
+
+# min(), max() - returns minimum and maximum item in the List
+python_score = [89,90,99,82,80,91,83,85,76]
+print("Python Score  :",python_score)
+print("Minimum Score :",min(python_score))
+print("Maximum Score :",max(python_score))
+_______________________________________________________________________________________
+output:
+Python Score  : [89, 90, 99, 82, 80, 91, 83, 85, 76]
+Minimum Score : 76
+Maximum Score : 99
+_______________________________________________________________________________________
+
