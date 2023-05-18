@@ -1,0 +1,49 @@
+# Adding Elements
+aiml = ['HTML','CSS','JAVASCRIPT','PHP','MYSQL']
+print(aiml)
+
+___________________________________________________________________
+output
+['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'MYSQL']
+___________________________________________________________________
+
+# Adding single item at the end 
+aiml.append('PYTHON')
+print(aiml)
+
+___________________________________________________________________
+output
+['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'MYSQL', 'PYTHON']
+___________________________________________________________________
+
+
+# Adding entire list to another list
+languages = ['C','C++','C#','R','Kotlin']
+aiml.extend(languages)
+print(aiml)
+
+___________________________________________________________________
+output
+['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'MYSQL', 'PYTHON', 'C', 'C++', 'C#', 'R', 'Kotlin']
+___________________________________________________________________
+
+
+# Adding values in run time 
+data_analytics = []
+n = int(input("Nter Nr of items\n"))
+for i in range(n):
+    data_analytics.append(input())
+print(data_analytics)
+    
+___________________________________________________________________
+output
+Nter Nr of items
+4
+Artificial Intelligence
+Machine Learning
+Neural Network
+Deep Learning
+['Artificial Intelligence', 'Machine Learning', 'Neural Network', 'Deep Learning']
+___________________________________________________________________
+
+
